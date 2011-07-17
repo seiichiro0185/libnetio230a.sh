@@ -1,10 +1,25 @@
-This project provides you with a bash library to controll a NetIO 230A LAN IP Remote Socket.
+This project provides you with a bash library to control a NetIO 230A LAN IP Remote Socket.
 
-The library currently only can controll one netio at a time. if you want to controll more you have
+PREQUISITES:
+============
+
+the following tools are needed to use this script:
+
+ * bash
+ * wget
+ * md5sum (for encrypted login)
+
+
+LIMITATIONS:
+============
+
+The library currently only can control one netio at a time. if you want to control more you have
 to logout/login whenever you switch between them. The login will be remembered for the current
 script or bash instance until a logout is done.
 
-Here are some basic example of the useage:
+
+USAGE EXAMPLES:
+===============
 
 # import the library
 
