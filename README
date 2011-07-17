@@ -1,0 +1,28 @@
+This project provides you with a bash library to controll a NetIO 230A LAN IP Remote Socket.
+
+The library currently only can controll one netio at a time. if you want to controll more you have
+to logout/login whenever you switch between them. The login will be remembered for the current
+script or bash instance until a logout is done.
+
+Here are some basic example of the useage:
+
+# import the library
+
+source libnetio230a.sh
+
+# login to the NetIO at 192.168.1.10 with encrypted login user power password 123
+
+netio.login 192.168.1.10 c power 123
+
+# get status of port 3 and print it
+
+netio.getport 192.168.1.10 3
+echo $?
+
+# set port 4 to off
+
+netio.setport 192.168.1.10 4 0
+
+# logout
+
+netio.logout
